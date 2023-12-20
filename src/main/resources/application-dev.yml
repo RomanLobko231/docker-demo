@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: postgres
+    password: personpassword
+    url: jdbc:postgresql://postgresdb:5432/persondb
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
